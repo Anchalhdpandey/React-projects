@@ -1,0 +1,80 @@
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .accordian .item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .accordian .title {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordian .title:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .accordian .title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .accordian .title span {
+    font-size: 24px;
+    line-height: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordian .content {
+    padding: 15px;
+    background-color: #fff;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  button {
+    background-color: #03dac5; /* Teal */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #018786; /* Darker Teal */
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: #015d54; /* Even Darker Teal */
+    transform: translateY(0);
+  }
+  
